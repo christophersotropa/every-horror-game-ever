@@ -5,7 +5,7 @@ public class WakeUpController : MonoBehaviour
 {
     public CanvasGroup fadeCanvasGroup;
     public float holdDuration = 3.0f;
-    public float fadeDuration = 3.0f;
+    public float fadeDuration = 2.0f;
     public float trackpadSensitivity = 2.0f;
 
 
