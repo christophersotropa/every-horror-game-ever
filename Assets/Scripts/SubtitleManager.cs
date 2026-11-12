@@ -19,6 +19,8 @@ public class SubtitleManager : MonoBehaviour
     [Header("Subtitles")]
     public SubtitleLine[] lines;
 
+    private Coroutine oneOffRoutine;
+
     void Start()
     {
         subtitleText.text = "";
@@ -38,16 +40,17 @@ public class SubtitleManager : MonoBehaviour
         }
     }
 
-    // Call this from other scripts for one-off subtitles, e.g. when entering a trigger
+    // Called by PlayerInteractor (locked door, key pickup) or any other script
     public void ShowSubtitle(string text, float duration)
     {
-        StopAllCoroutines();
-        StartCoroutine(ShowOne(text, duration));
+        // Only stops the previous one-off message, not the scripted intro lines
+        if (oneOffRoutine != null) StopCoroutine(oneOffRoutine);
+        oneOffRoutine = StartCoroutine(ShowOne(text, duration));
     }
 
     IEnumerator ShowOne(string text, float duration)
     {
-        subtitleText.text = text;   
+        subtitleText.text = text;
         yield return new WaitForSeconds(duration);
         subtitleText.text = "";
     }
