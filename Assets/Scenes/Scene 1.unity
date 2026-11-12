@@ -5753,6 +5753,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoteObject (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6709555961248450568, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f96231efd92aef44493ce5fff9b0d674, type: 2}
     - target: {fileID: 8489792070304636183, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.524
@@ -5799,7 +5803,7 @@ PrefabInstance:
       objectReference: {fileID: 1055726333}
     - target: {fileID: 8505558077939025664, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
       propertyPath: noteText
-      value: '[SCARY MESSAGE]'
+      value: Wake up.
       objectReference: {fileID: 0}
     - target: {fileID: 8505558077939025664, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
       propertyPath: noteCanvas
@@ -59795,7 +59799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.69
+      value: -7.73
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -59803,7 +59807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.99
+      value: -41.82
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8377b28f368c45d4199bae71a2a5eabc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -60856,6 +60860,118 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 99eb208358f64d247b2294b674f35fd7, type: 3}
   m_PrefabInstance: {fileID: 1356526332}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1358061653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358061657}
+  - component: {fileID: 1358061656}
+  - component: {fileID: 1358061655}
+  - component: {fileID: 1358061654}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1358061654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358061653}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1358061655
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358061653}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8589be8fea3887442bae469d70481421, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1358061656
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358061653}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1358061657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358061653}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 17.56, y: -0.768, z: 32.04966}
+  m_LocalScale: {x: 1, y: 0.59998, z: -0.029307}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1001 &1358783753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -90046,6 +90162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoteObject
       objectReference: {fileID: 0}
+    - target: {fileID: 6709555961248450568, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f96231efd92aef44493ce5fff9b0d674, type: 2}
     - target: {fileID: 8489792070304636183, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.161
@@ -90090,6 +90210,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1055726333}
+    - target: {fileID: 8505558077939025664, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
+      propertyPath: noteText
+      value: You must find four keys to escape.. P.S.Press  'F' For flashlight, and right click to close this note.
+      objectReference: {fileID: 0}
     - target: {fileID: 8505558077939025664, guid: e8ebfea7ff8c14b4eaa484c53fb84468, type: 3}
       propertyPath: noteCanvas
       value: 
@@ -90185,3 +90309,4 @@ SceneRoots:
   - {fileID: 247164170}
   - {fileID: 806243114}
   - {fileID: 834544106}
+  - {fileID: 1358061657}
